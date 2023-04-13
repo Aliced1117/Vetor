@@ -1,2 +1,21 @@
-/**/
+body{
+    background-color: rgb(217, 163, 219);
+}
 
+.nome{ 
+    padding: 7px;
+    border: none;
+    outline: none;
+}
+
+.botao{
+    padding: 7px;
+    border: none;
+    background-color: dodgerblue;
+    color: white;
+}
+
+h2{
+    color: white;
+    font-size: arial;
+}
