@@ -7,29 +7,31 @@
     <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
     <link rel="stylesheet" href="css/style.css">
+
     <script>
-        function cadastrar(){
         var nomes = []
-        var nomeinserido = []
-        var exibirnome = "";
+        
+        function cadastrar(){
+            var nomeinserido
+            nomeinserido = document.getElementById('insertnome').value
 
-        nomeinserido = document.getElementById('insertnome').value 
+            alert(nomeinserido)
+            nomes.push(nomeinserido)
 
-        nomes.push(nomeinserido)
-        alert(nomes[0])
-
-        exibirnome = nomeinserido
-        document.getElementById("exibirnome").textContent = exibirnome
+            for (var i = 0; i < nomes.length; i++){
+                alert(nomes[i])
+            }   
         }
-    </script>
+    </script> 
 </head>
 <body>
+    <div>
     <center>
-    <h2> Guardas Nomes </h2>
+    <h2> NOMES </h2>
 	<input type="text" class="nome" placeholder="insira o nome aqui" id="insertnome">
     <input type="button" value="Cadastrar" onclick="cadastrar()" class="botao">
     <h1 id="exibirnome"></h1>
-    </center>
-
+    </center> 
+    </div>
 </body>
 </html>

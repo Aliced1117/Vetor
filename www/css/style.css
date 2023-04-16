@@ -6,6 +6,7 @@ body{
     padding: 7px;
     border: none;
     outline: none;
+    width: 250px;
 }
 
 .botao{
@@ -16,6 +17,12 @@ body{
 }
 
 h2{
-    color: white;
+    color: rgb(0, 0, 0);
     font-size: arial;
+}
+
+div{
+    background-color: rgba(255, 255, 255, 0.685);
+    padding: 7px;
+    border-radius: 10px;
 }
